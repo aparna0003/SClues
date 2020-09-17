@@ -2,8 +2,11 @@
   <div>
     <v-content>
       It Worked!
+      <carousel/>
+          
       <card/>
-      <form/>
+      
+           
     </v-content>
   </div>
 </template>
