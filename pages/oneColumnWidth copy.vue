@@ -1,68 +1,33 @@
 <template>
   <v-container class="grey lighten-5">
+    <v-row>
+      
+       <toolbar/>
+    </v-row>
     <v-row
      
-    >
-      <v-col
-        v-for="n in 3"
-        :key="n"
-        :cols="n === 2 ? 6 : undefined"
-        <breadcrumb/>
-      >
-        <v-card
-          class="pa-5"
-          outlined
-          tile
-        >
-          {{ n === 1 ? '(wider)' : '' }}
-        </v-card>
-      </v-col>
-     </v-row>
-     <v-row no-gutters>
-      <v-col
-        v-for="n in 3"
-        :key="n"
-        :cols="n === 2 ? 5 : undefined"
-        <carousel/>
-      >
-       <v-col
-        v-for="n in 3"
-        :key="n"
-        :cols="n === 2 ? 5 : undefined"
-        <card/>
-      >
-       <v-col
-        v-for="n in 3"
-        :key="n"
-        :cols="n === 2 ? 5 : undefined"
+    
+     <breadcrumb/>  
+   </v-row>
+    <v-row no-gutters>
+      
         <toolbar/>
-      >
-      <v-col
-        v-for="n in 3"
-        :key="n"
-        :cols="n === 2 ? 5 : undefined"
+     
+        <card/>
+      
+        <toolbar/>
+      
+      
         <avatar/>
-      >
-        <v-col
-        v-for="n in 3"
-        :key="n"
-        :cols="n === 2 ? 5 : undefined"
+      
         <scroll/>
-      >
-       <v-col
-        v-for="n in 2"
-        :key="n"
-        :cols="n === 2 ? 5 : undefined"
-        <breadcrumb/>
-      >
-       <v-col
-        v-for="n in 2"
-        :key="n"
-        :cols="n === 2 ? 5 : undefined"
-        <hover/>
-      >
+      
        
-      </v-col>
+        <breadcrumb/>
+      
+       
+        <hover/>
+    
     </v-row>
      <v-row
       class="mb-6"

@@ -3,10 +3,23 @@
   <v-app id="inspire">
     
     <!--Header -->
-    <v-app-bar color="red" dark fixed app>
-      <v-toolbar-title>Application</v-toolbar-title>
+    <!--<v-app-bar color="red" dark fixed app>
+      <v-toolbar-title>Application</v-toolbar-title>-->
        <!-- Component Example -->
-      <VuetifyLogo/>
+       <v-row
+         class md="6"
+         >
+         <v-col
+         md="1"
+        ><VuetifyLogo/>
+         </v-col>
+         <v-col
+           md="9"
+           offset-md="1"
+          ><toolbar/>
+         </v-col>
+         </v-row>
+      <tab/>
     </v-app-bar>
 
     <!-- Body -->
