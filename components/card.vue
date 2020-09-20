@@ -21,7 +21,7 @@
              class="ml-md-auto"
              >
              <v-card
-               class="pa-7"
+               class centered="pa-7" 
                outlined
                tile
                >
@@ -74,11 +74,11 @@
       </v-card-actions>
       <v-row>
         <v-col
-          md="2"
+          md="3"
            class="ml-md-auto"
            >
            <v-card
-             class= "pa-2"
+             class= "pa-1"
              outlined
              tile
              >

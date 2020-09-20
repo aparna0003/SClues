@@ -3,8 +3,8 @@
     
     <v-row
       class="mb-12"
-      no-gutters
-    >
+      
+    >  <!--breadcrumb is added-->
       <v-col md="1">
        <breadcrumb/>
         
@@ -15,8 +15,10 @@
       class="mb-6"
       
     >
-       <v-col
+        <!--to insert the picture-->
+       <v-col  
          md="1"
+         class="ml-md-auto"
          offset-md="2"
          <v-img
            height="550"
@@ -24,8 +26,8 @@
          ></v-img>
           
       </v-col>
-    
-      <v-col
+    <!--to insert the card with details-->
+      <v-col   
          md="1"
          offset-md="5"
          <card/>          
@@ -39,9 +41,9 @@
     </v-row>
     <v-row
       class="mb-6" dark
-      >
+      >  <!---the area to enter comments are added-->
       <v-col>
-           enter your queries 
+          Click to enter your queries 
          <input/>
       </v-col>
     </v-row>

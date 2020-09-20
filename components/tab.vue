@@ -17,7 +17,7 @@
             v-for="n in 3"
             :key="n"
           >
-            Item {{ n }}
+            Description
           </v-tab>
         </v-tabs>
       </template>
@@ -36,7 +36,7 @@
           <v-card-title class="headline">An awesome title</v-card-title> <!-- to asssign the text of specification-->>
           <v-card-text>
             <p>
-              Display`              6.1-inch Liquid Retina HD display with True Tone <br>
+              Display              6.1-inch Liquid Retina HD display with True Tone <br>
 
               Width   :                75.7 mm (2.98 inches)<br>
 
@@ -72,16 +72,35 @@
       </v-tab-item>
       <v-tab-item>
         <v-card flat>
-          <v-card-title class="headline">brand discription</v-card-title>
-          <v-card-text>
+          <v-row>
+        <v-col
+          md="5"
+           class="ml-md-auto"
+           offset-md="0"
+           >
+           <v-card-text>
             <p>
-              Maecenas ullamcorper, dui et placerat feugiat, eros pede varius nisi, condimentum viverra felis nunc et lorem. Sed hendrerit. Maecenas malesuada. Vestibulum ullamcorper mauris at ligula. Proin faucibus arcu quis ante.
-            </p>
+              Apple Inc. is an American multinational technology company headquartered in Cupertino, California, that designs, develops, and sells consumer electronics, computer software, and online services. It is considered one of the Big Tech technology companies, alongside Amazon, Google, Microsoft, and Facebook.
 
-            <p class="mb-0">
-              Etiam vitae tortor. Curabitur ullamcorper ultricies nisi. Sed magna purus, fermentum eu, tincidunt eu, varius ut, felis. Aliquam lobortis. Suspendisse potenti.
+              The company's hardware products include the iPhone smartphone, the iPad tablet computer, the Mac personal computer, the iPod portable media player, the Apple Watch smartwatch, the Apple TV digital media player, the AirPods wireless earbuds and the HomePod smart speaker. Apple's software includes macOS, iOS, iPadOS, watchOS.
             </p>
+         
           </v-card-text>
+         </v-col>
+         <v-col
+           md="3"
+           class="ml-md-auto"
+           offset-md="2"
+           >
+            <v-img
+           height="350"
+           src="https://wpgroupbuydemo.com/wp-content/uploads/2014/07/Apple_logo.png"
+         ></v-img>
+            
+          </v-col>
+        
+        </v-row>
+          
         </v-card>
       </v-tab-item>
     </v-tabs-items>

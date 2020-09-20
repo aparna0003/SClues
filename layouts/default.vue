@@ -17,10 +17,10 @@
          <v-col
            md="9"
            offset-md="1"
-          ><toolbar/>
+          ><toolbar/>  <!--persistant tool bar is added-->
          </v-col>
          </v-row>
-      <catagory/>
+      <catagory/>     <!--catagory bar for all pages is-->
     </v-app-bar>
 
     <!-- Body -->
@@ -29,7 +29,7 @@
     </v-content>
     
     <!-- Footer -->
-    <v-footer color="#55BCC9" app>
+    <v-footer color="#55BCC9" app> <!--colour of the footer is changed-->
       <span class="white--text">&copy; {{ new Date().getFullYear() }}</span>
     </v-footer>
 
