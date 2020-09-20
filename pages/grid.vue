@@ -9,6 +9,7 @@
         md="6"
         xs="3"
       >
+        <priceOffer/>
         <v-card
           class="pa-2"
           outlined
@@ -16,6 +17,7 @@
         >
           One of three columns
         </v-card>
+        
       </v-col>
     </v-row>
   </v-container>

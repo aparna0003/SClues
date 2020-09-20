@@ -4,7 +4,7 @@
       class="mb-6"
       no-gutters
     
-       <toolbar/>      
+       <detailCard/>      
     </v-row>
 
     <v-row no-gutters>

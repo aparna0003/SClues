@@ -14,11 +14,14 @@
         <v-col
           md="4"
           class="ml-auto"
+          
         >
+        <detailCard/>
           <v-card
             class="pa-2"
             outlined
             tile
+            <detailCard/>
           >
             .col-md-4 .ml-auto
           </v-card>
@@ -72,6 +75,9 @@
             .col-auto
           </v-card>
         </v-col>
+      </v-row>
+      <v-row>
+        <detailCard/>
       </v-row>
     </v-container>
   </div>

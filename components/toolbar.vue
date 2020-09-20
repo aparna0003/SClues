@@ -1,8 +1,8 @@
 <template>
   <v-card
-    color="grey lighten-4"
+    color="#55BCC9"
     flat
-    height="45px"
+    height="50px"
     tile
   >
     <v-toolbar dense>

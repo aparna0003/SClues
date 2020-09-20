@@ -1,43 +1,115 @@
 <template>
-  <v-card class="d-inline-block mx-auto">
-    <v-container>
-      <v-row justify="space-between">
-        <v-col cols="auto">
-          <v-img
-            height="200"
-            width="200"
-            src="https://cdn.vuetifyjs.com/images/cards/store.jpg"
-          ></v-img>
-        </v-col>
+  <v-card
+    class="mx-auto"
+    max-width="500"
+  >
+    <v-card-text>
+      <div>Word of the Day</div>
+      <p class="display-1 text--primary">
+        iPhone X (Black) (64 GB)
+      </p>
+       <div>Product Code: 7866454532</div>
+      <p>adjective</p>
+      <div class="text--primary">
+          6.1-inch (15.5 cm) Liquid Retina HD LCD display
+          Water and dust resistant (2 meters for up to 30 minutes, IP68) <br><br>
+          Dual-camera system with 12MP Ultra Wide and Wide cameras; Night mode, Portrait mode, and 4K video up to 60fps
+          well meaning and kindly.<br>
 
-        <v-col
-          cols="auto"
-          class="text-center pl-0"
-        >
-          <v-row
-            class="flex-column ma-0 fill-height"
-            justify="center"
-          >
-            <v-col class="px-0">
-              <v-btn icon>
-                <v-icon>mdi-heart</v-icon>
-              </v-btn>
+         <v-row>
+           <v-col
+             md="5"
+             class="ml-md-auto"
+             >
+             <v-card
+               class="pa-7"
+               outlined
+               tile
+               >
+               SC50
+              </v-card>
+           </v-col>
+           <v-col
+             md="6"
+             class="ml-md-auto"
+             >
+              Offer can be availed till 25th June 
+              The discount can be applied with GST
             </v-col>
-
-            <v-col class="px-0">
-              <v-btn icon>
-                <v-icon>mdi-bookmark</v-icon>
-              </v-btn>
-            </v-col>
-
-            <v-col class="px-0">
-              <v-btn icon>
-                <v-icon>mdi-share-variant</v-icon>
-              </v-btn>
-            </v-col>
+        
           </v-row>
-        </v-col>
-      </v-row>
-    </v-container>
+
+          <p class="display-1 text--primary">
+           Rs.68,000/-
+         </p>
+ 
+        </div>
+     </v-card-text>
+     <v-card-actions>
+     <v-row>
+           <v-col
+             md="5"
+             class="ml-md-auto"
+             >
+              <v-btn
+                text
+               color="deep-purple accent-4"
+               >
+               Add to Cart
+              </v-btn>
+           </v-col>
+           <v-col
+             md="6"
+             class="ml-md-auto"
+             >
+              <v-btn
+               text
+               color="deep-purple accent-4"
+                >
+               Buy Now
+              </v-btn>
+            </v-col>
+        
+          </v-row>
+      
+      </v-card-actions>
+      <v-row>
+        <v-col
+          md="5"
+           class="ml-md-auto"
+           >
+           <v-card
+             class="pa-1"
+             outlined
+             tile
+             >
+             <p> 682306 </p>
+            </v-card>
+         </v-col>
+         <v-col
+           md="6"
+           class="ml-md-auto"
+           >
+            <p> Delivery Datee: 12/11/2020 <p/>
+          </v-col>
+        
+        </v-row>
+        <p> COD, Credit, Debit, Net Banking, Wallets, EMI </p>
+        <v-row>
+        <v-col
+          md="5"
+           class="ml-md-auto"
+           >
+           
+             <p> Return Available  </p>
+              </v-col>
+         <v-col
+           md="6"
+           class="ml-md-auto"
+           >
+            <p> Warranty: 1 year <p/>
+          </v-col>
+        
+        </v-row>
   </v-card>
 </template>

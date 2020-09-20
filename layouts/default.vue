@@ -8,6 +8,7 @@
        <!-- Component Example -->
        <v-row
          class md="6"
+          no-gutters
          >
          <v-col
          md="1"
@@ -19,7 +20,7 @@
           ><toolbar/>
          </v-col>
          </v-row>
-      <tab/>
+      <catagory/>
     </v-app-bar>
 
     <!-- Body -->
@@ -28,7 +29,7 @@
     </v-content>
     
     <!-- Footer -->
-    <v-footer color="indigo" app>
+    <v-footer color="#55BCC9" app>
       <span class="white--text">&copy; {{ new Date().getFullYear() }}</span>
     </v-footer>
 
@@ -45,6 +46,6 @@ export default {}
   }
 
    #inspire {
-    background-color: white;
+    background-color: azure;
   }
 </style>

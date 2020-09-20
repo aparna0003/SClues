@@ -1,5 +1,6 @@
 <template>
-  <v-container class="grey lighten-5">
+  <v-container class="black">
+    
     <v-row
       class="mb-12"
       no-gutters
@@ -12,39 +13,22 @@
     </v-row>
     <v-row
       class="mb-6"
-      no-gutters
+      
     >
        <v-col
-         md="3"
-         offset-md="4"
+         md="1"
+         offset-md="2"
          <v-img
-           height="250"
-           src="https://cdn.vuetifyjs.com/images/cards/cooking.png"
+           height="550"
+           src="https://www.jasemx.com/wp-content/uploads/2019/10/product1.jpg"
          ></v-img>
           
       </v-col>
+    
       <v-col
-        md="3"
-        offset-md="1"
-      >
-        <v-card
-          class="pa-20"
-          outlined
-          tile
-        >
-          .col-md-3 .offset-md-3iuofjko'kfiodl;fjk;dgblihdfljdljd;fkgj;dj<br>md-3 .offset-md-3iuofjko'kfiodl;fjk;dgblihdfljdljd;fkgj;dj<br>md-3 .offset-md-3iuofjko'kfiodl;fjk;dgblihdfljdljd;fkgj;dj<br>md-3 .offset-md-3iuofjko'kfiodl;fjk;dgblihdfljdljd;fkgj;dj<br>
-        </v-card>
-      </v-col>
-      <v-col
-         md="3"
-         offset-md="4"
-         <loader/>          
-      </v-col>
-
-       <v-col
-        md="2"
-        offset-md="5"
-        <button/>
+         md="1"
+         offset-md="5"
+         <card/>          
       </v-col>
     </v-row>
     <v-row>
