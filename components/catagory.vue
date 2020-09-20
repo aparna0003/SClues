@@ -1,5 +1,5 @@
 <template>
-color: #55BCC9
+
   <v-tabs>
     <v-tab>MADE IN INDIA  </v-tab>
     <v-tab>MEN</v-tab>

@@ -4,12 +4,11 @@
     max-width="500"
   >
     <v-card-text>
-      <div>Word of the Day</div>
       <p class="display-1 text--primary">
         iPhone X (Black) (64 GB)
       </p>
        <div>Product Code: 7866454532</div>
-      <p>adjective</p>
+   
       <div class="text--primary">
           6.1-inch (15.5 cm) Liquid Retina HD LCD display
           Water and dust resistant (2 meters for up to 30 minutes, IP68) <br><br>
@@ -53,7 +52,7 @@
              >
               <v-btn
                 text
-               color="deep-purple accent-4"
+               color="deep-purple accent-0"
                >
                Add to Cart
               </v-btn>
@@ -75,11 +74,11 @@
       </v-card-actions>
       <v-row>
         <v-col
-          md="5"
+          md="2"
            class="ml-md-auto"
            >
            <v-card
-             class="pa-1"
+             class= "pa-2"
              outlined
              tile
              >
