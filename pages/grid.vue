@@ -2,6 +2,23 @@
   <v-container class="grey lighten-5">
     <v-row no-gutters>
       <v-col
+        
+        :key="n"
+        
+        
+        md="6"
+        xs="3"
+      >
+        <v-card
+          class="pa-2"
+          outlined
+          tile
+        >
+          One of three columns
+        </v-card>
+        
+      </v-col>
+      <v-col
         v-for="n in 12"
         :key="n"
         cols="12"
@@ -9,7 +26,23 @@
         md="6"
         xs="3"
       >
-        <priceOffer/>
+        <v-card
+          class="pa-2"
+          outlined
+          tile
+        >
+          One of three columns
+        </v-card>
+        
+      </v-col>
+      <v-col
+        v-for="n in 12"
+        :key="n"
+        cols="12"
+        sm="3"
+        md="6"
+        xs="3"
+      >
         <v-card
           class="pa-2"
           outlined
@@ -20,5 +53,25 @@
         
       </v-col>
     </v-row>
+    <v-row no-gutters>
+      <v-col
+        v-for="n in 12"
+        :key="n"
+        cols="12"
+        sm="3"
+        md="6"
+        xs="3"
+      >
+        <v-card
+          class="pa-2"
+          outlined
+          tile
+        >
+          One of three columns
+        </v-card>
+        
+      </v-col>
+
+      </v-row>
   </v-container>
 </template>

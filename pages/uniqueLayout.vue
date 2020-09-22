@@ -35,6 +35,7 @@
         :key="n"
         cols="6"
         md="4"
+        sm="2"
       >
         <v-card
           class="pa-2"
@@ -51,7 +52,7 @@
       <v-col
         v-for="n in 2"
         :key="n"
-        cols="6"
+        cols="2"
       >
         <v-card
           class="pa-2"
