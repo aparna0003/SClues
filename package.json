@@ -10,7 +10,7 @@
     "deploy": "push-dir --dir=dist --branch=gh-pages --cleanup"
   },
   "dependencies": {
-    "nuxt": "^2.14.5",
+    "nuxt": "^2.14.6",
     "save": "^2.4.0"
   },
   "devDependencies": {
