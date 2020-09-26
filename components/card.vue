@@ -1,6 +1,6 @@
 <template>
   <v-card
-    class="mx-auto"
+    class="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-sx-12"
     max-width="500"
   >
     <v-card-text>

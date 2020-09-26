@@ -1,94 +1,71 @@
 <template>
-  <v-card
-    class="mx-auto"
-    max-width="1300"
-  >
-    <v-card-title class="white--text orange darken-4">
-     Review
-
-      <v-spacer></v-spacer>
-
-      
-  </v-card-title>
-
-     <v-card-text class="pt-4"> 
-      adipisicing elit. Quasi nobis a at voluptates culpa optio amet! Inventore deserunt voluptatem maxime a veniam placeat, eos impedit nulla quos? Officiis, aperiam ducimus.
-    </v-card-text>
-
-    <v-divider></v-divider>
-
-    <v-virtual-scroll
-      :items="items"
-      :item-height="50"
-      height="300"
+  <div>
+    <v-responsive
+      max-width="400"
+      class="mx-auto mb-4"
     >
-      <template v-slot="{ item }">
-        <v-list-item>
-          <v-list-item-avatar>
-            <v-avatar
-              :color="item.color"
-              size="56"
-              class="white--text"
-            >
-              {{ item.initials }}
-            </v-avatar>
-          </v-list-item-avatar>
+      <v-text-field
+        v-model="benched"
+        type="number"
+        label="Total Benched"
+        min="0"
+        max="10"
+      ></v-text-field>
+    </v-responsive>
 
-          <v-list-item-content>
-            <v-list-item-title>{{ item.fullName }}</v-list-item-title>
-          </v-list-item-content>
-
-          <v-list-item-action>
-            <v-btn
-              depressed
-              small
-            >
-              View User
-
-              <v-icon
-                color="orange darken-4"
-                right
+    <v-card
+      elevation="16"
+      max-width="400"
+      class="mx-auto"
+    >
+      <v-virtual-scroll
+        :bench="benched"
+        :items="items"
+        height="300"
+        item-height="64"
+      >
+        <template v-slot="{ item }">
+          <v-list-item :key="item">
+            <v-list-item-action>
+              <v-btn
+                fab
+                small
+                depressed
+                color="primary"
               >
-                mdi-open-in-new
-              </v-icon>
-            </v-btn>
-          </v-list-item-action>
-        </v-list-item>
-      </template>
-    </v-virtual-scroll>
-  </v-card>
+                {{ item }}
+              </v-btn>
+            </v-list-item-action>
+
+            <v-list-item-content>
+              <v-list-item-title>
+                User Database Record <strong>ID {{ }}</strong>
+              </v-list-item-title>
+            </v-list-item-content>
+
+            <v-list-item-action>
+              <v-icon small>mdi-open-in-new</v-icon>
+            </v-list-item-action>
+          </v-list-item>
+
+          <v-divider></v-divider>
+        </template>
+      </v-virtual-scroll>
+    </v-card>
+  </div>
 </template>
 
 <script>
   export default {
     data: () => ({
-      colors: ['#2196F3', '#90CAF9', '#64B5F6', '#42A5F5', '#1E88E5', '#1976D2', '#1565C0', '#0D47A1', '#82B1FF', '#448AFF', '#2979FF', '#2962FF'],
-      names: ['the product was great', 'great service','good quality', 'helpful help line'],
-      surnames: ['user:'],
+      benched: 0,
     }),
-
     computed: {
       items () {
-        const namesLength = this.names.length
-        const surnamesLength = this.surnames.length
-        const colorsLength = this.colors.length
-
-        return Array.from({ length: 10 }, (k, v) => {
-          const name = this.names[this.genRandomIndex(namesLength)]
-          const surname = this.surnames[this.genRandomIndex(surnamesLength)]
-
-          return {
-            color: this.colors[this.genRandomIndex(colorsLength)],
-            fullName: `${surname} ${name}`,
-            initials: `${name[0]} ${surname[0]}`,
-          }
-        })
+        return Array.from({ length: this.length }, (k, v) => v + 1)
       },
-    },
-
-    methods: {
-      genRandomIndex (length) {
-        return Math.ceil(Math.random() * (length - 1))
+      length () {
+        return 7000
       },
     },
   }

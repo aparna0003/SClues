@@ -1,6 +1,8 @@
 <template>
 
-  <v-tabs>
+  <v-tabs
+  class= "centered">
+  
     <v-tab>MADE IN INDIA  </v-tab>
     <v-tab>MEN</v-tab>
     <v-tab>WOMEN</v-tab>
