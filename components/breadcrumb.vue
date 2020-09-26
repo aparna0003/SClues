@@ -16,17 +16,17 @@
     data: () => ({
       items: [
         {
-          text: 'Dashboard',
+          text: 'Home Page',
           disabled: false,
           href: 'breadcrumbs_dashboard',
         },
         {
-          text: 'Link 1',
+          text: 'iPhone',
           disabled: false,
           href: 'breadcrumbs_link_1',
         },
         {
-          text: 'Link 2',
+          text: 'iPhone X',
           disabled: true,
           href: 'breadcrumbs_link_2',
         },
