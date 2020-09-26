@@ -14,10 +14,16 @@
           centered
         >
           <v-tab
-            v-for="n in 3"
-            :key="n"
-          >
+            >
             Description
+          </v-tab>
+           <v-tab
+            >
+            Specification
+          </v-tab>
+           <v-tab
+            >
+            Brand
           </v-tab>
         </v-tabs>
       </template>

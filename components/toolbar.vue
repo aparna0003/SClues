@@ -1,6 +1,6 @@
 <template>
   <v-card
-
+    class= "blue"
     flat
     height="50px"
     tile
