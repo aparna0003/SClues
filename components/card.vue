@@ -1,7 +1,7 @@
 <template>
   <v-card
-    class="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-sx-12"
-    max-width="500"
+    class="col-xl-3 col-lg-5 col-md-5 col-sm-12 col-sx-12"
+    max-width="800"
   >
     <v-card-text>
       <p class="display-1 text--primary">
@@ -18,11 +18,11 @@
 
          <v-row>
            <v-col
-             md="5"
+             md="6"
              class="ml-md-auto"
              >
              <v-card
-               class centered="pa-7" 
+               class centered="pa-0" 
                outlined
                tile
                >

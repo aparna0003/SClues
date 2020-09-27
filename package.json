@@ -10,6 +10,7 @@
     "deploy": "push-dir --dir=dist --branch=gh-pages --cleanup"
   },
   "dependencies": {
+    "jquery": "^3.5.1",
     "nuxt": "^2.14.6",
     "save": "^2.4.0"
   },
