@@ -9,13 +9,18 @@
        <v-row
          class md="6"
           no-gutters
+          col="12"
          >
          <v-col
          md="1"
+         col-sm="1"
+         col-sx="2"
         ><VuetifyLogo/>
          </v-col>
          <v-col
-           md="9"
+           md="10"
+          col-sm="10"
+           col-sx="6"
            offset-md="1"
           ><toolbar/>  <!--persistant tool bar is added-->
          </v-col>
@@ -46,6 +51,6 @@ export default {}
   }
 
    #inspire {
-    background-color: grey;
+    background-color:#E0F7FA ;
   }
 </style>

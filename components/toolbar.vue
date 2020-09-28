@@ -1,12 +1,8 @@
 <template>
-
- 
- 
- 
     <v-toolbar
     
-    class="cyan lighten-5 "
-    elevation="0px" >
+      class="cyan lighten-5 "
+      elevation="0px" >
       
 
     <!--the icons for the tab is added-->
@@ -60,7 +56,7 @@
        
     </v-toolbar>
     </div>
- 
+  
 </template>
 
 <!--the names dropdown menu is added-->
