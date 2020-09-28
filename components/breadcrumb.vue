@@ -1,11 +1,12 @@
 <template>
-  <v-breadcrumbs :items="items">
+  <v-breadcrumbs :items="items" light 
+   > <!--to make font visivle-->
     <template v-slot:item="{ item }">
       <v-breadcrumbs-item
         :href="item.href"
         :disabled="item.disabled"
       >
-        {{ item.text.toUpperCase() }}
+        {{ item.text.toUpperCase() }} <!--to make the text uppercase-->
       </v-breadcrumbs-item>
     </template>
   </v-breadcrumbs>
@@ -14,7 +15,7 @@
 <script>
   export default {
     data: () => ({
-      items: [
+      items: [   //assigning the parts of the breadcrum text
         {
           text: 'Home Page',
           disabled: false,

@@ -1,18 +1,16 @@
 <template>
-  <v-card>
+  <v-card  
+  light  
+  elevation="0">
     <v-toolbar
-      color="#55BCC9"
-      
-      flat
-      prominent
+      color="cyan lighten-5"
+      elevation="0"
     >
-      
-
-      <template v-slot:extension>
+      <template >
         <v-tabs
           v-model="tabs"
-          centered
-        >
+          
+        ><!--naming each tab-->
           <v-tab
             >
             Description
@@ -28,7 +26,7 @@
         </v-tabs>
       </template>
     </v-toolbar>
-
+     <!--entering thwe content for the tabs-->
     <v-tabs-items v-model="tabs">
       <v-tab-item>
         <v-card flat>
@@ -39,7 +37,7 @@
       </v-tab-item>
       <v-tab-item>
         <v-card flat>
-          <v-card-title class="headline">An awesome title</v-card-title> <!-- to asssign the text of specification-->>
+           <!-- to asssign the text of specification-->
           <v-card-text>
             <p>
               Display              6.1-inch Liquid Retina HD display with True Tone <br>
@@ -80,8 +78,9 @@
         <v-card flat>
           <v-row>
         <v-col
-          md="5"
-           class="ml-md-auto"
+          md="6"
+          
+           class="md-6 sm-sx-12"
            offset-md="0"
            >
            <v-card-text>
@@ -93,29 +92,35 @@
          
           </v-card-text>
          </v-col>
-         <v-col
-           md="3"
-           class="ml-md-auto"
-           offset-md="2"
-           >
-            <v-img
-           height="350"
-           src="https://wpgroupbuydemo.com/wp-content/uploads/2014/07/Apple_logo.png"
-         ></v-img>
-            
-          </v-col>
+        
+          <v-col       
+             md="2"
+              sm="12"
+             class="md-3 col-sm-12" >
+              <!--placing image and text int he same row-->
+         
+               <v-img
+        
+                   src="https://www.freepnglogos.com/uploads/apple-logo-png/apple-logo-png-apple-grey-logo-png-transparent-pngpix-24.png" fluid alt="Responsive image"
+                ></v-img>
+         
+             
+           </v-col>
+         
         
         </v-row>
           
         </v-card>
       </v-tab-item>
-    </v-tabs-items>
+    </v-tabs-items
+    <span class="black--text">
   </v-card>
 </template>
 
 <script>
   export default {
-    data () {
+    data ()
+     {
       return {
         tabs: null,
         text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',

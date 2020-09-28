@@ -1,7 +1,9 @@
 <template>
-
+   <!--the tabs for main categories-->
   <v-tabs
-  class= "centered">
+   elevation="0px"
+  color="cyan lighten-5"
+    class= "centered ">
   
     <v-tab>MADE IN INDIA  </v-tab>
     <v-tab>MEN</v-tab>
@@ -12,4 +14,5 @@
     <v-tab>SPORT AND MORE</v-tab>
     <v-tab>DAILY ESSENTIALS</v-tab>
   </v-tabs>
+ 
 </template>

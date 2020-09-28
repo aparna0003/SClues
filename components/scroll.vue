@@ -1,21 +1,12 @@
 <template>
   <div>
-    <v-responsive
-      max-width="400"
-      class="mx-auto mb-4"
-    >
-      <v-text-field
-        v-model="benched"
-        type="number"
-        label="Total Benched"
-        min="0"
-        max="10"
-      ></v-text-field>
-    </v-responsive>
-
+    
+    <!--dimention of the scroll bar card-->
     <v-card
-      elevation="16"
-      max-width="400"
+      elevation="0"
+      max-width="1550"
+      pa="0"
+      ma="0"
       class="mx-auto"
     >
       <v-virtual-scroll
@@ -36,16 +27,16 @@
                 {{ item }}
               </v-btn>
             </v-list-item-action>
-
+            <!--to add the content in the scroll-->
             <v-list-item-content>
               <v-list-item-title>
-                User Database Record <strong>ID {{ }}</strong>
+                
+                <strong> When will the next batch of products be available {{ }}</strong><br>
+                 Ans:The product will be available within a month <strong> {{ }}</strong>
               </v-list-item-title>
             </v-list-item-content>
 
-            <v-list-item-action>
-              <v-icon small>mdi-open-in-new</v-icon>
-            </v-list-item-action>
+            
           </v-list-item>
 
           <v-divider></v-divider>

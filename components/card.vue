@@ -1,7 +1,10 @@
 <template>
+<!--starting of the card-->
   <v-card
-    class="col-xl-3 col-lg-5 col-md-5 col-sm-12 col-sx-12"
+   
+    class=".black--text col-xl-3 col-lg-5 col-md-5 col-sm-12 col-sx-12"
     max-width="800"
+    elevation="0px"
   >
     <v-card-text>
       <p class="display-1 text--primary">
@@ -9,8 +12,8 @@
       </p>
        <div>Product Code: 7866454532</div>
        
-   
-      <div class="text--primary">
+       <!--main product information-->
+      <div class="text--primary .black--text" >
           6.1-inch (15.5 cm) Liquid Retina HD LCD display
           Water and dust resistant (2 meters for up to 30 minutes, IP68) <br><br>
           Dual-camera system with 12MP Ultra Wide and Wide cameras; Night mode, Portrait mode, and 4K video up to 60fps
@@ -19,7 +22,7 @@
          <v-row>
            <v-col
              md="6"
-             class="ml-md-auto"
+             class="ml-md-sm-auto"
              >
              <v-card
                class centered="pa-0" 
@@ -45,29 +48,33 @@
  
         </div>
      </v-card-text>
+     <!--adding buttons-->
      <v-card-actions>
      <v-row>
            <v-col
              md="5"
              class="ml-md-auto"
              >
-              <v-btn
-                text
-               color="deep-purple accent-0"
-               >
-               Add to Cart
-              </v-btn>
+             <!--adding buttons-->
+             <v-btn
+              color="cyan lighten-1"
+              dark
+              large
+            >
+              Add to Cart
+            </v-btn>
            </v-col>
            <v-col
              md="6"
              class="ml-md-auto"
              >
               <v-btn
-               text
-               color="deep-purple accent-4"
-                >
-               Buy Now
-              </v-btn>
+              color="cyan lighten-1"
+              dark
+              large
+            >
+              Buy Now
+            </v-btn>
             </v-col>
         
           </v-row>
@@ -79,7 +86,7 @@
            class="ml-md-auto"
            >
            <v-card
-             class= "pa-1"
+             class= "pa-"
              outlined
              tile
              >
@@ -90,7 +97,7 @@
            md="6"
            class="ml-md-auto"
            >
-            <p> Delivery Datee: 12/11/2020 <p/>
+            <p> Delivery Date: 12/11/2020 <p/>
           </v-col>
         
         </v-row>

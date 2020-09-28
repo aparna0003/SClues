@@ -1,6 +1,6 @@
 <template>
   <!--Your App Starts Here -->
-  <v-app id="inspire">
+  <v-app id="inspire" light>
     
     <!--Header -->
     <!--<v-app-bar color="red" dark fixed app>
@@ -41,11 +41,11 @@ export default {}
 </script>
 
 <style> 
-  .white--text {
+  .black--text {
     border: 1px solid;
   }
 
    #inspire {
-    background-color: azure;
+    background-color: grey;
   }
 </style>
