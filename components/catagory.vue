@@ -1,11 +1,11 @@
 <template>
    <!--the tabs for main categories-->
   <v-tabs
-   elevation="0px"
+   elevation="0 px"
   color="cyan lighten-5"
-    class= "centered ">
+    class= "centered menubar2">
   
-    <v-tab>MADE IN INDIA  </v-tab>
+    <v-tab> MADE IN INDIA  </v-tab>
     <v-tab>MEN</v-tab>
     <v-tab>WOMEN</v-tab>
     <v-tab>HOME FURNATURE</v-tab>
@@ -16,3 +16,11 @@
   </v-tabs>
  
 </template>
+
+<style>
+ @media (max-width: 1024px) {
+         .menubar2 {
+           display:none;
+         }
+      }
+</style>

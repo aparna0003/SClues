@@ -34,7 +34,7 @@
     </v-content>
     
     <!-- Footer -->
-    <v-footer color="#55BCC9" app> <!--colour of the footer is changed-->
+    <v-footer color="#55BCC9" > <!--colour of the footer is changed-->
       <span class="white--text">&copy; {{ new Date().getFullYear() }}</span>
     </v-footer>
 

@@ -1,8 +1,11 @@
 <template>
-    <v-toolbar
+    <v-toolbar 
     
       class="cyan lighten-5 "
-      elevation="0px" >
+      elevation="0 px" >
+
+   
+  >
       
 
     <!--the icons for the tab is added-->
@@ -27,12 +30,12 @@
         
       </v-btn>
       
-          <v-menu
+          <v-menu 
             bottom
             left
           >
             <template v-slot:activator="{ on, attrs }">
-              <v-btn
+              <v-btn class="menubar1"
                
                 icon
                 v-bind="attrs"
@@ -55,9 +58,16 @@
           </v-menu>
        
     </v-toolbar>
-    </div>
+  
   
 </template>
+<style>
+ @media (min-width: 1024px) {
+         .menubar1 {
+           display:none;
+         }
+      }
+</style>
 
 <!--the names dropdown menu is added-->
 <script>

@@ -9,6 +9,6 @@
 <style>
 .VuetifyLogo {
   height: 50px;
-  width: 170px;
+  width: 180px;
 }
 </style>
