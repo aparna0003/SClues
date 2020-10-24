@@ -10,7 +10,7 @@
     "deploy": "push-dir --dir=dist --branch=gh-pages --cleanup"
   },
   "dependencies": {
-    "nuxt": "^2.14.6",
+    "nuxt": "^2.14.7",
     "save": "^2.4.0",
     "vue-responsive-dash": "^0.5.0"
   },
