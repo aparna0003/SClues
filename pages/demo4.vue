@@ -30,9 +30,24 @@
         >
           First, but unordered
         </v-card>
+         <v-card
+          class="pa-0"
+          outlined
+          tile
+        >
+          First, but unordered
+        </v-card>
         </v-row>
       </v-col>
-
+       <v-col order="6">
+        <v-card
+          class="pa-0"
+          outlined
+          tile
+        >
+          detail card
+        </v-card>
+      </v-col>
      
 
       </v-col>

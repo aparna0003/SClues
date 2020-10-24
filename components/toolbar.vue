@@ -2,10 +2,7 @@
     <v-toolbar 
     
       class="cyan lighten-5 "
-      elevation="0 px" >
-
-   
-  >
+      elevation="0px" >
       
 
     <!--the icons for the tab is added-->
