@@ -2,8 +2,11 @@
    <!--the tabs for main categories-->
   <v-tabs
    elevation="0 px"
-  color="cyan lighten-5"
+   color="white"
+   background-color="#55BCC9"
+      center-active
     class= "centered menubar2">
+    
   
     <v-tab> MADE IN INDIA  </v-tab>
     <v-tab>MEN</v-tab>

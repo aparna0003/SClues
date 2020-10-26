@@ -3,12 +3,15 @@
     class="VuetifyLogo"
     alt="Vuetify Logo"
     src="shopclues-png-logo.png"
+    
+    
   >
 </template>
 
 <style>
 .VuetifyLogo {
-  height: 50px;
-  width: 180px;
+  
+ max-height: 100px;
+  max-width: 220px;
 }
 </style>

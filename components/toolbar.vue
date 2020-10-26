@@ -2,9 +2,14 @@
     <v-toolbar 
     
       class="cyan lighten-5 "
-      elevation="0px" >
-      
-
+      elevation="0 px" >
+      <v-row
+         
+          no-gutters
+          col="12"
+         
+         >
+        
     <!--the icons for the tab is added-->
 
       <v-spacer></v-spacer>
@@ -18,14 +23,12 @@
       </v-btn>
       <v-btn icon light>
         <v-icon>mdi-bell</v-icon>
-      </v-btn>
+      </v-btn>2
       <v-btn icon light>
         <v-icon>mdi-cart</v-icon>
       </v-btn>
 
-      <v-btn icon light>
-        
-      </v-btn>
+      
       
           <v-menu 
             bottom
@@ -53,7 +56,7 @@
               </v-list-item>
             </v-list>
           </v-menu>
-       
+       </v-row>
     </v-toolbar>
   
   

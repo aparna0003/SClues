@@ -1,14 +1,16 @@
 <template>
-  <v-card  
-  light  
+  <v-card 
+    color="white" 
+    light
   elevation="0">
     <v-toolbar
-      color="cyan lighten-5"
+      color="white"
       elevation="0"
     >
       <template >
         <v-tabs
           v-model="tabs"
+          color="cyan lighten-1"
           
         ><!--naming each tab-->
           <v-tab
@@ -29,17 +31,27 @@
      <!--entering thwe content for the tabs-->
     <v-tabs-items v-model="tabs">
       <v-tab-item>
-        <v-card flat>
+        <v-card flat
+        light
+        color="#EDF8F9">
           <v-card-text>
+           <div>
+            <p class="lato-14-regular">
             The iPhone 11 is a smartphone designed, developed, and marketed by Apple Inc. It is the thirteenth generation lower-priced iPhone, succeeding the iPhone XR. It was unveiled on September 10, 2019, alongside the higher-end iPhone 11 Pro flagship at the Steve Jobs Theater in Apple Park, Cupertino by Apple CEO Tim Cook. Pre-orders began on September 13, 2019, and the phone was officially released on September 20, 2019, one day after the official public release of iOS 13.
+            </p>
+           </div>
           </v-card-text>
         </v-card>
       </v-tab-item>
       <v-tab-item>
-        <v-card flat>
+        <v-card flat
+        light
+        color="#EDF8F9">
            <!-- to asssign the text of specification-->
           <v-card-text>
-            <p>
+           
+          <div>
+            <p >
               Display              6.1-inch Liquid Retina HD display with True Tone <br>
 
               Width   :                75.7 mm (2.98 inches)<br>
@@ -70,39 +82,59 @@
              Warranty :          1 year manufacturer warranty for device and 6 months manufacturer warranty for 
                                  in-box accessories including batteries from the date of purchase<br>
            </p>
-            
+           </div> 
           </v-card-text>
         </v-card>
       </v-tab-item>
       <v-tab-item>
-        <v-card flat>
-          <v-row>
+        <v-card flat
+        color="#EDF8F9"
+        light>
+          <v-row 
+           class="col-lg-12 col-sm-12 col-xs-12">
         <v-col
           md="6"
           
-           class="md-6 sm-sx-12"
+          class=" col-xs-4 col-sm-9 col-md-9 col-lg-9 "
            offset-md="0"
            >
-           <v-card-text>
+           <v-card-text
+           >
+           <div>
             <p>
               Apple Inc. is an American multinational technology company headquartered in Cupertino, California, that designs, develops, and sells consumer electronics, computer software, and online services. It is considered one of the Big Tech technology companies, alongside Amazon, Google, Microsoft, and Facebook.
 
               The company's hardware products include the iPhone smartphone, the iPad tablet computer, the Mac personal computer, the iPod portable media player, the Apple Watch smartwatch, the Apple TV digital media player, the AirPods wireless earbuds and the HomePod smart speaker. Apple's software includes macOS, iOS, iPadOS, watchOS.
             </p>
-         
+            </div>
           </v-card-text>
          </v-col>
         
           <v-col       
-             md="2"
-              sm="12"
-             class="md-3 col-sm-12" >
+             
+             
+              class=" col-xs-2 col-sm-3 col-md-2 col-lg-3 ">
               <!--placing image and text int he same row-->
+              
+           <v-img
+             class="white--text align-end"
+              src="https://www.freepnglogos.com/uploads/apple-logo-png/apple-logo-png-apple-grey-logo-png-transparent-pngpix-24.png"
+             :width="$vuetify.breakpoint.xs 
+                ? '230px' 
+                : ($vuetify.breakpoint.sm
+                    ? '400px' 
+                    : ($vuetify.breakpoint.md
+                        ? '600px'
+                        : ($vuetify.breakpoint.lg
+                            ? '200px' 
+                            : '800px'
+                        )
+                    )
+                )"
          
-               <v-img
-        
-                   src="https://www.freepnglogos.com/uploads/apple-logo-png/apple-logo-png-apple-grey-logo-png-transparent-pngpix-24.png" fluid alt="Responsive image"
-                ></v-img>
+          ></v-img>
+         
+              
          
              
            </v-col>
