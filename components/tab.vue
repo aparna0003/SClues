@@ -1,11 +1,11 @@
 <template>
   <v-card 
     color="white" 
-    light
-  elevation="0">
-    <v-toolbar
+   light
+  elevation="0 px"> <!--colour for the card-->
+    <v-toolbar 
       color="white"
-      elevation="0"
+      elevation="0 px"
     >
       <template >
         <v-tabs
@@ -13,15 +13,15 @@
           color="cyan lighten-1"
           
         ><!--naming each tab-->
-          <v-tab
+          <v-tab class="smallbody"
             >
             Description
           </v-tab>
-           <v-tab
+           <v-tab class="smallbody"
             >
             Specification
           </v-tab>
-           <v-tab
+           <v-tab class="smallbody"
             >
             Brand
           </v-tab>
@@ -32,11 +32,11 @@
     <v-tabs-items v-model="tabs">
       <v-tab-item>
         <v-card flat
-        light
-        color="#EDF8F9">
+       
+        color="#fff">
           <v-card-text>
            <div>
-            <p class="lato-14-regular">
+            <p class="tabtext justifytext">
             The iPhone 11 is a smartphone designed, developed, and marketed by Apple Inc. It is the thirteenth generation lower-priced iPhone, succeeding the iPhone XR. It was unveiled on September 10, 2019, alongside the higher-end iPhone 11 Pro flagship at the Steve Jobs Theater in Apple Park, Cupertino by Apple CEO Tim Cook. Pre-orders began on September 13, 2019, and the phone was officially released on September 20, 2019, one day after the official public release of iOS 13.
             </p>
            </div>
@@ -44,14 +44,14 @@
         </v-card>
       </v-tab-item>
       <v-tab-item>
-        <v-card flat
+        <v-card flat class="tabtext"
         light
-        color="#EDF8F9">
+        color="#fff">
            <!-- to asssign the text of specification-->
           <v-card-text>
            
-          <div>
-            <p >
+          
+            <p class="tabtext justifytext">
               Display              6.1-inch Liquid Retina HD display with True Tone <br>
 
               Width   :                75.7 mm (2.98 inches)<br>
@@ -82,26 +82,26 @@
              Warranty :          1 year manufacturer warranty for device and 6 months manufacturer warranty for 
                                  in-box accessories including batteries from the date of purchase<br>
            </p>
-           </div> 
+           
           </v-card-text>
         </v-card>
       </v-tab-item>
       <v-tab-item>
         <v-card flat
-        color="#EDF8F9"
+        color="#fff"
         light>
           <v-row 
            class="col-lg-12 col-sm-12 col-xs-12">
         <v-col
           md="6"
           
-          class=" col-xs-4 col-sm-9 col-md-9 col-lg-9 "
+          class=" tabtext col-xs-5 col-sm-9 col-md-9 col-lg-9 "
            offset-md="0"
            >
            <v-card-text
            >
-           <div>
-            <p>
+           <div><!--text for brand details-->
+            <p class="tabtext justifytext">
               Apple Inc. is an American multinational technology company headquartered in Cupertino, California, that designs, develops, and sells consumer electronics, computer software, and online services. It is considered one of the Big Tech technology companies, alongside Amazon, Google, Microsoft, and Facebook.
 
               The company's hardware products include the iPhone smartphone, the iPad tablet computer, the Mac personal computer, the iPod portable media player, the Apple Watch smartwatch, the Apple TV digital media player, the AirPods wireless earbuds and the HomePod smart speaker. Apple's software includes macOS, iOS, iPadOS, watchOS.
@@ -149,6 +149,17 @@
   </v-card>
 </template>
 
+<style>
+.tabtext { /*smaller detail body font stylingin black*/
+    color: black;
+    font-size: 14px;
+    font-family:lato;
+
+  }
+  
+
+</style>
+
 <script>
   export default {
     data ()
@@ -159,4 +170,5 @@
       }
     },
   }
+  
 </script>

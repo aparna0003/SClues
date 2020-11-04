@@ -5,7 +5,7 @@
    color="white"
    background-color="#55BCC9"
       center-active
-    class= "centered menubar2">
+    class= "center  menubar2">
     
   
     <v-tab> MADE IN INDIA  </v-tab>
@@ -26,4 +26,10 @@
            display:none;
          }
       }
+ .center {/*to justify the row*/
+  margin: auto;
+  width: 100%;
+  border: 0px ;
+  padding: 0px;
+}
 </style>

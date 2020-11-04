@@ -1,7 +1,7 @@
 <template>
     <v-toolbar 
     
-      class="cyan lighten-5 "
+      class=" cyan lighten-5 "
       elevation="0 px" >
       <v-row
          
@@ -23,13 +23,13 @@
       </v-btn>
       <v-btn icon light>
         <v-icon>mdi-bell</v-icon>
-      </v-btn>2
+      </v-btn>
       <v-btn icon light>
         <v-icon>mdi-cart</v-icon>
       </v-btn>
 
       
-      
+      <!--Adding icons-->
           <v-menu 
             bottom
             left
@@ -48,6 +48,7 @@
 
             <v-list>
               <v-list-item
+              color="white"
                 v-for="(item, i) in items"
                 :key="i"
                 
@@ -62,11 +63,12 @@
   
 </template>
 <style>
- @media (min-width: 1024px) {
+ @media (min-width: 1025px) {
          .menubar1 {
            display:none;
          }
       }
+ 
 </style>
 
 <!--the names dropdown menu is added-->
@@ -83,6 +85,7 @@
         { title: 'Sports and More' },
         { title: 'Daily Essentials' },
         { title: 'Setting' },
+        
       ],
     }),
   }

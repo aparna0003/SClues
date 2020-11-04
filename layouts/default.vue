@@ -14,7 +14,7 @@
          >
           <v-col
            
-           class=" col-xs-1 col-sm-2 col-md-2 col-lg-3 light"
+           class=" col-xs-1 col-sm-1 col-md-2 col-lg-3 light"
           >
           <v-card
              
@@ -22,13 +22,14 @@
                pa="2" 
                tile
                max-height="500"
+               elevation= "0 px"
                >
               <VuetifyLogo/>  <!--persistant tool bar is added-->
           </v-card>
          </v-col>
         
          <v-col
-           class="  col-xs-3 col-sm-10 col-md-9 col-lg-9 light"
+           class="  col-xs-4 col-sm-7 col-md-9 col-lg-9 light"
            v-offset="2"
           ><toolbar/>  <!--persistant tool bar is added-->
          </v-col>
@@ -42,13 +43,13 @@
     </v-content>
           
     <!-- Footer -->
-    <v-footer color="grey" 
+    <v-footer color="white" 
     light> <!--colour of the footer is changed-->
     <!--footer content is added-->
-     <v-container>
-      <v-row>
-
-      <v-col>
+     <v-container class="menubar2">  <!--first div for the conversion of the footer-->
+      <v-row class="smallbody ">
+    <!--adding the colums one by one-->
+      <v-col >
       <h5>Shopper Central</h5>
      <p> Easy Returns & Replacement </p>
      <p> Our Policies</p>
@@ -100,6 +101,30 @@
       <span class="white--text">&copy; {{ new Date().getFullYear() }}</span>
       </v-row>
       </v-container>
+
+       <v-container class="menubar1"> <!--second div for the conversion of the footer-->
+      <v-row>
+
+      <v-col >
+     
+      <h5 class="code">Useful Links</h5>
+     <p class="smallbody"> Easy Returns & Replacements  |  Privacy Policy  |  User Agreement  |
+         Notes to Security Practices  |  Labor Compliance  |  Shopper Central  |
+         Merchant Central  |  About Us  |  Contact Us  |  Press 
+      </p>
+     
+ </v-col>
+       
+      
+
+
+      
+
+      </v-row >
+      <v-row>
+      <span class="white--text">&copy; {{ new Date().getFullYear() }}</span>
+      </v-row>
+      </v-container>
     </v-footer>
 
   </v-app>
@@ -117,5 +142,17 @@ export default {}
    #inspire {
     background-color:white ;
     color: black;
+
   }
+  .menubar2 {
+           display:none;
+         }
+  @media (min-width: 1025px) {
+         .menubar1 {
+           display:none;
+         }
+         .menubar2 {
+           display:block;
+         }
+      }
 </style>
