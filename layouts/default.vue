@@ -107,11 +107,7 @@
             </v-toolbar-items>
          </v-toolbar>
       </v-card>
-      <v-card class="pa-2 br-0" style="background:#D3EAEC; height:100%;">
-         <CouponPopup/>
-         <Product/>
-      </v-card>
-   </v-app>
+    </v-app>
 </template>
 <!-- This is the script to include title list in header.. 
    This can then be rendered / displayed using a loop and thus making an object like this makes it easy to display details. -->
