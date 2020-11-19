@@ -107,6 +107,10 @@
             </v-toolbar-items>
          </v-toolbar>
       </v-card>
+      <!-- Body -->
+    <v-content light>
+      <nuxt /> 
+    </v-content>
     </v-app>
 </template>
 <!-- This is the script to include title list in header.. 
