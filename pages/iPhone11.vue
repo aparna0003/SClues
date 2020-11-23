@@ -1,5 +1,6 @@
 
  <template>
+  <v-card class="pa-2 br-0" style="background:#FFF; height:100%;"> <!--to add colour for the area outside the container without any elivation-->
   <v-container class="white">
     <v-row class="col-lg-12 col-sm-12 col-xs-12">
       <!--breadcrumb is added-->
@@ -291,10 +292,13 @@
        
       </v-row>
     </v-row>
+
  
   </v-container>
- 
+ </v-card>
 </template>
+
+
  <style>
   .mainbody { /*main body font styling*/
     color: black;
@@ -332,6 +336,11 @@
 .justifytext {  /* to justify text*/
     text-align: justify;
 }
+#inspire {
+    background-color:white ;
+    color: black;
+}
+
   </style>
  
  

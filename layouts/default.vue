@@ -108,7 +108,8 @@
          </v-toolbar>
       </v-card>
       <!-- Body -->
-    <v-content light>
+    <v-content light  style="background:white;">
+    
       <nuxt /> 
     </v-content>
     </v-app>
