@@ -82,6 +82,7 @@
                   <!-- This button is to the button to place the final order.
                      linear-gradient(to right, orange, red) renders the button in gradient form from orange to red/ -->
                   <v-btn large color="white" class="px-15 py-5" style="background:linear-gradient(to right, orange, red);font-size:18px; text-transform: none; width:100%" elevation="2" text @click="dialog = false">Place Order</v-btn>
+                  <v-btn large color="red" class="px-15 py-5 mt-2" style="font-size:18px; text-transform: none; width:100%; border: 2px solid red" text @click="dialog = false">Track Order</v-btn>
                </v-col>
             </v-row>
          </v-col>
