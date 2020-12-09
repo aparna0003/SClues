@@ -2,6 +2,7 @@
   <v-card 
     color="white" 
    light
+   background="white"
   elevation="0 px"> <!--colour for the card-->
     <v-toolbar 
       color="white"
@@ -45,7 +46,7 @@
       </v-tab-item>
       <v-tab-item>
         <v-card flat class="tabtext"
-        light
+        
         color="#fff">
            <!-- to asssign the text of specification-->
           <v-card-text>
@@ -89,7 +90,7 @@
       <v-tab-item>
         <v-card flat
         color="#fff"
-        light>
+       dark>
           <v-row 
            class="col-lg-12 col-sm-12 col-xs-12">
         <v-col

@@ -158,18 +158,20 @@
             
           </v-row > <!--to add starts for rating-->
         <v-row class="bot-marg">
-        <v-btn icon light>
-        <v-icon large>mdi-star</v-icon>
+        <v-btn icon color="cyan lighten-1">
+
+        <v-icon medium>mdi-star</v-icon>
+        </v-btn>
+         <v-btn icon light medium color="cyan lighten-1">
+        <v-icon medium >mdi-star</v-icon>
+        </v-btn>
+         <v-btn icon light medium color="cyan lighten-1">
+        <v-icon medium>mdi-star</v-icon>
         </v-btn>
          <v-btn icon light>
-        <v-icon large >mdi-star</v-icon>
+        <v-icon medium >mdi-star</v-icon>
         </v-btn>
-         <v-btn icon light>
-        <v-icon large>mdi-star</v-icon>
-        </v-btn>
-         <v-btn icon light>
-        <v-icon large >mdi-star</v-icon>
-        </v-btn>
+        
         
         </v-row>
         </v-col>
@@ -267,7 +269,7 @@
       <tab /> <!--to add the product description tabs-->
     </v-row>
     <br>
-    <p class="code">Chat with Retailers</p>
+    <p class="code ">Chat with Retailers</p>
     <v-row>
        <doubt/> <!--to add the chat with retailer and the queries-->
     </v-row>
@@ -280,10 +282,10 @@
         >
         <v-col><!--colour and design is fixed-->
           <v-card    
-           color="#E2EFEF">
+           color="#E2EFEF"
+           elevation= "0 px">
           <v-text-field
-          
-            class="smallbody bot-marg grey--text-darker-3"
+            light
             label="How was our service"
             
           ></v-text-field>
@@ -400,6 +402,18 @@ export default {}
  .pWidth { /*width of the main picture */
   max-width: 600px;
   min-width: 350px;
+  }
+
+  .question { /*smaller detail body font styling*/
+    color: black;
+    font-size: 15px;
+    font-weight: bold;
+    font-family:lato;
+  }
+  .answer { /*smaller detail body font styling*/
+    color: black;
+    font-size: 15px;
+    font-family:lato;
   }
  
   

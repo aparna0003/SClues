@@ -1,82 +1,281 @@
 <template>
   <v-card
-    class="mx-auto light"
-    flat
-    outline
-     color="#EDF8F9"
-    elivation="0"
+   color="#EDF8F9"
+    v-scroll.self="onScroll"
+    class="overflow-y-auto"
+    max-height="300"
     width="1200"
   >
     
-    <v-divider></v-divider>
+    <v-card-text>
+      <div
+        v-for="n in 1"
+        :key="n"
+        class="mb-4"
+      >
+       <p>
+       <p>
+       
+     <span class= " question"> 
+          How old is the stock? <br>
+      </span>
+       <span class= " question"> 
+          Ans: 
+      </span>
+      <span class= " answer"> 
+         The last stock was acquired two months back 
+      </span>
+       </p>
 
-    <v-virtual-scroll
-      :items="items"
-      :item-height="50"
-      height="300"
-    >
-      <template v-slot:default="{ item }">
-        <v-list-item
-           >
+       <p>       
+     <span class= " question"> 
+          When will next set of stock be available? <br>
+      </span>
+       <span class= " question"> 
+          Ans: 
+      </span>
+      <span class= " answer"> 
+          The next slot will be available within four days
+      </span>
+       </p>
+
+        <p>       
+     <span class= " question"> 
+          Where is you distribution center? <br>
+      </span>
+       <span class= " question"> 
+          Ans: 
+      </span>
+      <span class= " answer"> 
+          We are providing all over India 
+      </span>
+       </p>
+
+        <p>       
+     <span class= " question"> 
+         Are you providing colour variations? <br>
+      </span>
+       <span class= " question"> 
+          Ans: 
+      </span>
+      <span class= " answer"> 
+          We have all the colour variation available according tot the stock. Please look for the 
+          needful color specifically
+      </span>
+       </p>
+
+       <p>       
+     <span class= " question"> 
+          How much time does it take for transportation? <br>
+      </span>
+       <span class= " question"> 
+          Ans: 
+      </span>
+      <span class= " answer"> 
+           About a week 
+      </span>
+       </p>
+
+       <p>       
+     <span class= " question"> 
+          When all do you provide offer<br>
+      </span>
+       <span class= " question"> 
+          Ans: 
+      </span>
+      <span class= " answer"> 
+          Mostly offer 
+      </span>
+       </p>
+
+       <p>       
+     <span class= " question"> 
+          Is 162GB available <br>
+      </span>
+       <span class= " question"> 
+          Ans: 
+      </span>
+      <span class= " answer"> 
+          please check in our other products
+      </span>
+       </p>
+
+       <p>       
+     <span class= " question"> 
+          How to contact you <br>
+      </span>
+       <span class= " question"> 
+          Ans: 
+      </span>
+      <span class= " answer"> 
+          84203514452
+      </span>
+       </p>
+
+       <p>       
+     <span class= " question"> 
+          Are you providing warrenty <br>
+      </span>
+       <span class= " question"> 
+          Ans: 
+      </span>
+      <span class= " answer"> 
+         yes 1 year warrenty
+      </span>
+       </p>
+
+        <p>       
+     <span class= " question"> 
+         is warranty extension provided by you  <br>
+      </span>
+       <span class= " question"> 
+          Ans: 
+      </span>
+      <span class= " answer"> 
+        if you join our membership you will be provided after a certain procedure
+      </span>
+       </p>
+
+        <p>       
+     <span class= " question"> 
+         Are there extra charges for transportation   <br>
+      </span>
+       <span class= " question"> 
+          Ans: 
+      </span>
+      <span class= " answer"> 
+        It is included
+      </span>
+       </p>
+
+        <p>       
+     <span class= " question"> 
+         Is there any hidden cost  <br>
+      </span>
+       <span class= " question"> 
+          Ans: 
+      </span>
+      <span class= " answer"> 
+       No. We make sure of that
+      </span>
+       </p>
+
+        <p>       
+     <span class= " question"> 
+         is iPencil compatible with iPhone 11  <br>
+      </span>
+       <span class= " question"> 
+          Ans: 
+      </span>
+      <span class= " answer"> 
+       No. it is not
+      </span>
+       </p>
+
+        <p>       
+     <span class= " question"> 
+         Can you provide more detailed info <br>
+      </span>
+       <span class= " question"> 
+          Ans: 
+      </span>
+      <span class= " answer"> 
+        Sure. Please contact us in 15525415528
+      </span>
+       </p>
+
+        <p>       
+     <span class= " question"> 
+         I have ordered it already but its taking forever <br>
+      </span>
+       <span class= " question"> 
+          Ans: 
+      </span>
+      <span class= " answer"> 
+      Could you please provide you Purchase Id with us
+      </span>
+       </p>
+
+        <p>       
+     <span class= " question"> 
+         When to expect for delivery after purcgase ? <br>
+      </span>
+       <span class= " question"> 
+          Ans: 
+      </span>
+      <span class= " answer"> 
+        Over a week
+      </span>
+       </p>
+
+        <p>       
+     <span class= " question"> 
+         If the product sent to us is damaged will I get  a refund or exchange  <br>
+      </span>
+       <span class= " question"> 
+          Ans: 
+      </span>
+      <span class= " answer"> 
+       Sure actions will be taken according to the situation
+      </span>
+       </p>
+
+        <p>       
+     <span class= " question"> 
+        How do you transport  <br>
+      </span>
+       <span class= " question"> 
+          Ans: 
+      </span>
+      <span class= " answer"> 
+        ShopClues stays the transportation medium generally 
+      </span>
+       </p>
+
+        <p>       
+     <span class= " question"> 
+         For how long have you been in this buisness? <br>
+      </span>
+       <span class= " question"> 
+          Ans: 
+      </span>
+      <span class= " answer"> 
+       About a decade
+      </span>
+       </p>
+
+        <p>       
+     <span class= " question"> 
+         Are you varified  <br>
+      </span>
+       <span class= " question"> 
+          Ans: 
+      </span>
+      <span class= " answer"> 
+        yes we are
+      </span>
+       </p>
+
+       
+
+       </p>
          
-
-          <v-list-item-content>
-            <v-list-item-title
-               class="grey--text text--darken-4"
-               bold
-            >
-            {{ item.question }}            
-            
-            </v-list-item-title>
-
-            <v-list-item-title
-               class="dark grey--text"               
-            >
-            {{ item.review }}
-            
-            </v-list-item-title>
-          </v-list-item-content>
-
-          <v-list-item-action>
-            
-          </v-list-item-action>
-        </v-list-item>
-      </template>
-    </v-virtual-scroll>
+       
+      </div>
+    </v-card-text>
   </v-card>
 </template>
+
 
 <script>
   export default {
     data: () => ({
-      colors: ['#2196F3', '#90CAF9', '#64B5F6', '#42A5F5', '#1E88E5', '#1976D2', '#1565C0', '#0D47A1', '#82B1FF', '#448AFF', '#2979FF', '#2962FF'],
-      names: ['Are you varified', 'Is there any hidden cost', 'is iPencil compatible with iPhone 11 ', 'Can you provide more detailed info', 'When to expect for delivery after purcgase ?'],
-      surnames: ['Sure. Please contact us in 15525415528', 'No. it is not', 'Sure actions will be taken according to the situation', 'No. We make sure of that'],
+      scrollInvoked: 0,
     }),
 
-    computed: {
-      items () {
-        const namesLength = this.names.length
-        const surnamesLength = this.surnames.length
-        const colorsLength = this.colors.length
-
-        return Array.from({ length: 10000 }, (k, v) => {
-          const name = this.names[this.genRandomIndex(namesLength)]
-          const surname = this.surnames[this.genRandomIndex(surnamesLength)]
-
-          return {
-            color: this.colors[this.genRandomIndex(colorsLength)],
-            question: `${name} `,
-            review: ` ${surname}`,
-            initials: `${name[0]} ${surname[0]}`,
-          }
-        })
-      },
-    },
-
     methods: {
-      genRandomIndex (length) {
-        return Math.ceil(Math.random() * (length - 1))
+      onScroll () {
+        this.scrollInvoked++
       },
     },
   }
