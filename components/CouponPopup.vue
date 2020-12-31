@@ -29,7 +29,9 @@
                <hr>
                <v-card-actions style="background:white;">
                <!-- linear-gradient(to right, orange, red) renders the button in gradient form from orange to red. -->
+               <button @click="$router.push('track')">
                   <v-btn color="white" elevation="2" style="background:linear-gradient(to right, orange, red);font-size:16px; padding:20px 40px; text-transform: none; margin-left:30%; width:40%" text @click="dialog = false">Apply Coupon</v-btn>
+               </button>
                </v-card-actions>
             </v-dialog>
             <hr  style="background:white">

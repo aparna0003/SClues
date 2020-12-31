@@ -1,5 +1,6 @@
 
  <template>
+  
   <v-card class="pa-2 br-0" style="background:#FFF; height:100%;"> <!--to add colour for the area outside the container without any elivation-->
   <v-container class="white">
     <v-row class="col-lg-12 col-sm-12 col-xs-12">
@@ -201,6 +202,8 @@
              class="col-sx-md-7 ml-md-auto"
             
              ><!--the button for to buy nuw-->
+             <button @click="$router.push('cart')">
+           
               <v-btn
               color="cyan lighten-1"
               dark
@@ -210,6 +213,8 @@
             >
               Buy Now
             </v-btn>
+            </button>
+
             </v-col>
         
           </v-row>
